@@ -4,10 +4,25 @@ body {
     font-family: 'Red Hat Display', sans-serif;
     background: url("images/pattern-background-desktop.svg") no-repeat fixed;
     background-color: hsl(225, 100%, 94%);
+    box-sizing: border-box;
 }
 
 h1 {
     font-weight: 900;
+    font-size: 1.7em;
+    color: hsl(223, 47%, 23%);
+}
+
+button {
+  background-color: hsl(245, 75%, 52%);
+  color: white;
+  border: 2px solid hsl(223, 47%, 23%);
+  display: block;
+  width: 100%;
+  border-radius: 10px;
+  padding: 15px;
+  font-weight: 700;
+  font-size: 16px;
 }
 
 .container {
@@ -28,11 +43,57 @@ h1 {
 }
 
 .card-img {
-    width: 100%;
     border-radius: 20px 20px 0 0;
+    align-self: stretch;
 }
 
-.card > p {
+.card-content {
+    padding: 20px;
+}
+
+.card-content > p {
     max-width: 30ch;
     line-height: 1.6em;
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 500;
+    font-size: 18px;
+    margin-top: 0;
+}
+
+.pricing-container {
+    background-color: hsl(225, 100%, 98%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    padding: 0 20px;
+    margin-bottom: 30px;
+}
+
+.pricing-wrapper {
+    text-align: left;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.pricing-title {
+    font-size: 18px;
+    font-weight: 900;
+    margin-bottom: -15px;
+}
+
+.price {
+    color: rgba(0, 0, 0, 0.4);
+    font-weight: 700;
+}
+
+.pricing-container a {
+    color: hsl(245, 75%, 52%);
+    font-weight: 700;
+}
+
+.icon-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
