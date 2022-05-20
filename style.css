@@ -16,13 +16,24 @@ h1 {
 button {
   background-color: hsl(245, 75%, 52%);
   color: white;
-  border: 2px solid hsl(223, 47%, 23%);
+  border: none;
   display: block;
   width: 100%;
   border-radius: 10px;
-  padding: 15px;
+  padding: 17px;
   font-weight: 700;
   font-size: 16px;
+  margin-bottom: 30px;
+  -webkit-box-shadow: 0 15px 25px 0 rgba(56, 41, 224, 0.3);
+  -moz-box-shadow: 0 15px 25px 0 rgba(56, 41, 224, 0.3);
+  -o-box-shadow: 0 15px 25px 0 rgba(56, 41, 224, 0.3);
+  -ms-box-shadow: 0 15px 25px 0 rgba(56, 41, 224, 0.3);
+  box-shadow: 0 15px 25px 0 rgba(56, 41, 224, 0.3);
+}
+
+button:hover {
+    opacity: 0.7;
+    cursor: pointer;
 }
 
 .container {
@@ -40,6 +51,7 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
+    box-shadow: 0 20px 100px -50px rgba(56, 41, 224, 0.7);
 }
 
 .card-img {
@@ -48,7 +60,7 @@ button {
 }
 
 .card-content {
-    padding: 20px;
+    padding: 20px 20px 40px 20px;
 }
 
 .card-content > p {
@@ -80,6 +92,7 @@ button {
     font-size: 18px;
     font-weight: 900;
     margin-bottom: -15px;
+    color: hsl(223, 47%, 23%);
 }
 
 .price {
@@ -92,8 +105,23 @@ button {
     font-weight: 700;
 }
 
+.pricing-container a:hover {
+    text-decoration: none;
+    opacity: 0.8;
+}
+
 .icon-wrapper {
     display: flex;
     align-items: center;
     gap: 10px;
+}
+
+.cancel {
+    text-decoration: none;
+    font-weight: 900;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.cancel:hover {
+    color: hsl(223, 47%, 23%);
 }
